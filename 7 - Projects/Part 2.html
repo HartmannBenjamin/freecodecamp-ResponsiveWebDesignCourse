@@ -1,0 +1,131 @@
+<html>
+<main>
+    <h1 id="title">A New Title</h1>
+
+    <p id="description">
+        This is a description
+    </p>
+
+    <form id="survey-form">
+        <ul class="wrapper">
+            <li class="form-row">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter you name">
+            </li>
+
+            <li class="form-row">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter you email">
+            </li>
+
+            <li class="form-row">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="number" id="number" min=0 max=90 placeholder="Enter you age">
+            </li>
+
+            <li class="form-row">
+                <label id="dropdown-label" for="dropdown">Dropdown</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </li>
+
+            <p>Select a maintenance drone:</p>
+
+            <div>
+                <input type="radio" id="huey" name="drone" value="huey"
+                       checked>
+                <label for="huey">Huey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="drone" value="louie">
+                <label for="louie">Louie</label>
+            </div>
+
+            <p>Choose your monster's features:</p>
+
+            <div>
+                <input type="checkbox" id="scales" name="scales" value="scales">
+                <label for="scales">Scales</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="horns" name="horns" value="horns">
+                <label for="horns">Horns</label>
+            </div>
+
+            <p id="story-label" for="story">Story</p>
+
+            <textarea id="story" name="story" rows="5" cols="33">Write your story</textarea>
+
+            <li class="form-row">
+                <input id="submit" type="submit" value="Send Request">
+            </li>
+        </ul>
+    </form>
+</main>
+</html>
+
+<style>
+    #title {
+        text-align: center;
+    }
+
+    #description {
+        text-align: center;
+    }
+
+    #survey-form {
+        margin-right: auto;
+        margin-left: auto;
+        width: 30%;
+    }
+
+    .wrapper {
+        background-color: #EEEEEE;
+        list-style-type: none;
+        padding: 20px;
+        border-radius: 3px;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5em;
+    }
+
+    .form-row label,
+    .form-row p {
+        padding: 0.5em 1em 0.5em 0;
+        flex: 1;
+    }
+
+    .form-row input {
+        flex: 2;
+    }
+
+    .form-row input,
+    .form-row button {
+        padding: 0.5em;
+    }
+
+    .form-row button {
+        background: gray;
+        color: white;
+        border: 0;
+    }
+
+    #story {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+</style>
