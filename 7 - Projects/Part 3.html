@@ -1,0 +1,146 @@
+<html>
+    <header id="header">
+        <img id="header-img" src="https://static.skyminds.net/css-banner.jpg" alt="This is image">
+
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#video">Video</a></li>
+                <li class="nav-link"><a href="#form">Form</a></li>
+                <li class="nav-link"><a href="#copyright">Copyright</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yCPiX7_fy30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr/>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <div class="form-element">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter you email">
+            </div>
+
+            <div class="form-element">
+                <input id="submit" type="submit" value="Send Request">
+            </div>
+        </form>
+
+        <footer id="copyright">
+            <p> COPYRIGHT </p>
+        </footer>
+    </main>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        overflow: hidden;
+        list-style-type: none;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 18px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #0FAFA8;
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #header-img {
+        width: auto;
+        height: 94px;
+    }
+
+    #nav-bar {
+        width: 100%;
+        padding: 20px;
+        background-color: teal;
+        color: #0FAFA8;
+    }
+
+    #main {
+        display: flex;
+        margin: 150px auto 60px auto;
+        width: 30%;
+        justify-items: center;
+        flex-direction: column;
+        gap: 40px;
+        background-color: #E4E4E4;
+        padding: 30px;
+    }
+
+    #video {
+        display:block;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    @media only screen and (max-width: 1800px) {
+        #video {
+            width: 290px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        #video {
+            display: none;
+        }
+    }
+
+    .form-element {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0.5em;
+    }
+
+    .form-element label {
+        padding: 0.5em 1em 0.5em 0;
+        flex: 1;
+    }
+
+    .form-element input {
+        flex: 2;
+    }
+
+    .form-element input,
+    .form-element button {
+        padding: 0.5em;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 40px;
+        width: 100%;
+        background-color: #76A0C2;
+        color: white;
+    }
+</style>
