@@ -1,0 +1,120 @@
+<html>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Welcome</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <section id="welcome-section">
+            <h1>Welcome to my Portfolio</h1>
+            <p>How do you take your coffee?</p>
+
+        </section>
+
+        <section id="projects">
+            <h1>Here's my projects</h1>
+                <div class="container">
+                    <div class="project-tile">
+                        <a href=""><img id="project-img" src="https://images.caradisiac.com/images/7/7/5/2/187752/S0-plus-belle-voiture-de-l-annee-2021-et-la-gagnante-est-659940.jpg" alt="car"></a>
+                        <hr/>
+                        <p> A new car that I designed </p>
+                    </div>
+
+                    <div class="project-tile">
+                        <a href=""><img src="https://www.sciencesetavenir.fr/assets/img/2020/06/30/cover-r4x3w1000-5efb1064cc104-maveric-3d-01.jpg" alt="plane"></a>
+                        <hr/>
+                        <p> A new plane that I designed too </p>
+                    </div>
+                </div>
+        </section>
+
+        <div id="about">
+            <h1>About</h1>
+            <p>
+                <a id="profile-link" href="">GitHub</a> -
+                <a href="">Skype</a> -
+                <a href="">LinkedIn</a> -
+                <a href="">Gmail</a>
+            </p>
+        </div>
+    </div>
+</html>
+
+<style>
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+        background-color: #69D189;
+        font-size: 30px;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #58A770;
+    }
+
+    h1 {
+        font-family: Times, serif;
+        font-size: 30px;
+    }
+
+    #main {
+        width: 50%;
+        display: flex;
+        margin: 50px auto 0 auto;
+        justify-items: center;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #about {
+        background-color: #99DEA2;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+
+    .container {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    img {
+        margin-top: 40px;
+        height: 170px;
+        width: auto;
+    }
+
+    #projects h1 {
+        margin-bottom: 50px;
+    }
+
+    .project-tile {
+        background-color: #46C19E;
+    }
+</style>
